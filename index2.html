@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type=" text/css" href="styleAbout.css">
+
+
+
+
+
+
+
+</head>
+
+<body> 
+
+  <header> 
+
+   <a href="#" class="logo"> Logo</a>
+   <ul> 
+       <li>
+           <a href="#" class="active"> home </a>
+
+       </li>
+        <li>
+           <a href="#"> about </a>
+           
+       </li>
+       <li>
+        <a href="#"> work </a>
+        
+    </li>
+    <li>
+        <a href="#"> contact </a>
+        
+    </li>
+
+   </ul>    
+
+  </header>
+
+   <section> 
+ <!--this  might need to be all png's here. let's test later  -->
+    <img src="art/bg.jpg" id="bg"> 
+    <img src="art/moon.png" id="moon"> 
+    <img src="art/mountain.png" id="mountain"> 
+    <img src="art/mountain_front.png" id="mountain_front"> 
+    <h2 id = "text"> moon light </h2>
+    <a href="#sec" id= "btn"> Explore</a>
+    <!--img src="art/mountain_behind.png" id="mountain_behind"> 
+
+    <!--I might have to put mountains behind and in front -->
+
+   </section>
+
+   <div class="sec" id="sec">
+       <h2> Parallax Scrolling effect</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi porro laborum expedita saepe, alias dolorum? Dolore quis assumenda, sunt eos architecto officia temporib
+          us quisquam facilis! Dolor eos ducimus laudantium ipsa!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+        <br>  Ipsum possimus dolores dolor aspernat
+        ur sit odit nisi exercitationem iste beatae quaerat quod a dolorem illum, unde alias vitae, iure enim neque.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At sed natus, totam tempora magnam similique quisquam illum voluptates perferendis saepe qui iure quidem officiis distinctio nam est beatae quos vitae!</p>
+    <br>
+    <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi natus, sit quidem ipsam quis fugiat ducimus sunt? Harum assumenda laborum amet libero fugit, aspernatur atque natus a cum, animi fugiat.  
+
+</div>
+
+    <script>
+        // thi need to chaanve to adjust THE PICTURes and src in html 
+       let bg = document.getElementById('bg'); 
+       let moon = document.getElementById('moon');
+       let mountain_behind = document.getElementById('mountain_behind');
+       let mountain_front = document.getElementById('mountain_front');
+       let text = document.getElementById('text');
+       let btn = document.getElementById('btn');
+
+       window.addEventListener('scroll', function(){
+           let value = window.scrollY; 
+           bg.style.left= value + 'px';
+       })
+
+
+    </script>
+
+
+</body>
+
+</html>
